@@ -55,9 +55,9 @@ def top_five(location, place,size=5): #should pass location and food, default pa
     return results
 
 
-print("In this order enter separated by a comma: DESIRED LOCATION,DESIRED TYPE OF FOOD,# OF CHOICES TO BE DISPLAYED")
-print("Example: central park,pizza,6")
-user_input,food_choice,size=input("Location,FOOD,#: ").split(",")
+print("In this order enter separated by a ""', '"": DESIRED LOCATION,DESIRED TYPE OF FOOD,# OF CHOICES TO BE DISPLAYED")
+print("Example: central park, pizza, 6")
+user_input,food_choice,size=input("Location, FOOD, #: ").split(", ")
 location=get_location(user_input)
 choice=top_five(location,food_choice,int(size))
 print("\nHere are {size} {food_choice} places near: {user_input}".format(size=size,food_choice=food_choice,user_input=user_input))
