@@ -112,8 +112,9 @@ bool(something)-> turns into boolean
 '''Section 5 -string stuff'''
 name="Catherine"
 print(name[0]) # this would print out C
-print(name[:3]) # This would print out Cat
 print(name[3]) #prints h
+print(name[:3]) # This would print out Cat
+print(name[3:]) #prints herine
 # So this is called slicing, and it ends at index 3, but DOES NOT include the 3rd element which is h
 
 print(len(name)) #prints 9, again 0 to 8

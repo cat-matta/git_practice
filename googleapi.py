@@ -55,9 +55,9 @@ def top_five(location, place,size=5): #should pass location and food, default pa
     return results
 
 
-
-user_input=input("Input the location(can be a zip code or a place like central park): ")
-food_choice,size=input("Input resturant or type of food and number of choices to appear separated by a space: ").split()
+print("In this order enter separated by a ""', '"": DESIRED LOCATION,DESIRED TYPE OF FOOD,# OF CHOICES TO BE DISPLAYED")
+print("Example: central park, pizza, 6")
+user_input,food_choice,size=input("Location, FOOD, #: ").split(", ")
 location=get_location(user_input)
 choice=top_five(location,food_choice,int(size))
 print("\nHere are {size} {food_choice} places near: {user_input}".format(size=size,food_choice=food_choice,user_input=user_input))
