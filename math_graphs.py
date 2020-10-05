@@ -3,19 +3,6 @@ import matplotlib.ticker as tck
 import math as m
 import numpy as np
 
-
-# f,ax=plt.subplots(figsize=(20,10))
-# x=np.linspace(0, 10*np.pi,1000)
-# y=np.sin(x)
-
-# ax.plot(x/np.pi,y)
-
-# ax.xaxis.set_major_formatter(tck.FormatStrFormatter('%g $\pi$'))
-# ax.xaxis.set_major_locator(tck.MultipleLocator(base=1.0))
-
-# plt.style.use("ggplot")
-
-
 # plt.show()
 x= []
 y= []

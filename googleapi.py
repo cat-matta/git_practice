@@ -4,11 +4,14 @@ import time
 from geopy.geocoders import Nominatim
 
 # Ask for authorization for info with API key
-API_KEY = 'AIzaSyDYMwRSfChNGRiFY90ygxLzhiigkfBuhIo'
+
+file=open("googlekey.txt","r")
+
+API_KEY = file.read()
 gmaps = googlemaps.Client(key = API_KEY)
 
 geolocator = Nominatim(user_agent="googleapi")
-
+file.close()
 def get_location(foodie):
 	foodie=geolocator.geocode(foodie)
 	lat=str(foodie.latitude)
